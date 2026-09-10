@@ -1,0 +1,48 @@
+APP DOCTOR FREE BETA LICENSE
+Version 0.1 — 2026
+
+Copyright (c) 2026 App Doctor. All rights reserved.
+
+1. Scope
+
+This license applies only to the App Doctor application and App Doctor-owned materials distributed with it (the "App Doctor Software"). Third-party components are governed by their own licenses and notices.
+
+2. Free Beta license grant
+
+Subject to these terms, you may install and use the App Doctor Software at no charge for evaluation, software testing, development QA, and internal use, including QA work related to commercial software you develop or maintain.
+
+The App Doctor Software is distributed as closed-source software. No source-code license or source-code access right is granted by this license.
+
+3. Redistribution and resale
+
+You may not sell, resell, rent, lease, sublicense, redistribute, republish, mirror, host for third-party download, or bundle the App Doctor Software for distribution to others without prior written permission from the App Doctor project owner.
+
+You may make reasonable backup copies solely for your own permitted use. You may share reports produced by App Doctor, subject to your responsibility for any private information contained in those reports.
+
+4. Ownership and notices
+
+App Doctor and its original application code remain the property of their respective owner(s). This license grants permission to use the Free Beta; it does not transfer ownership. You may not remove or misrepresent App Doctor copyright, license, or attribution notices.
+
+5. Beta software and warranty disclaimer
+
+The Free Beta is pre-release software and may contain defects, incomplete compatibility, or behavior that changes in later versions. THE APP DOCTOR SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
+
+App Doctor is a QA automation tool, not a virtual machine, security sandbox, or guarantee that tested applications are safe or defect-free. Use test accounts, test data, and appropriate backups when testing software that can affect real data or systems.
+
+6. Limitation of liability
+
+To the maximum extent permitted by applicable law, the App Doctor project owner and contributors will not be liable for indirect, incidental, special, consequential, or similar damages arising from use of or inability to use the Free Beta.
+
+7. Third-party software
+
+This license does not replace, restrict, or relicense Microsoft .NET, WPF, Windows components, or any other third-party software. Their original license terms and notices remain applicable. See THIRD-PARTY-NOTICES.md and the licenses directory included with portable builds.
+
+8. Termination for breach
+
+Your permission under this license ends if you materially violate these terms. Rights that applicable law gives you regardless of contract are not limited by this text.
+
+9. Future versions
+
+Future App Doctor versions may be offered under different terms. Those future terms do not retroactively change the license text distributed with a copy you already received.
+
+These are the project's current Free Beta distribution terms. They are not presented as legal advice or as a substitute for review by qualified counsel before a commercial launch.
