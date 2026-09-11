@@ -8,4 +8,4 @@
 - Added optional AI-assisted visual review, separate from deterministic findings.
 - Added closed-source App Doctor Free Beta license terms while preserving third-party licenses.
 
-This version is still undergoing release validation. No public Free Beta binary release has been published yet.
+Release-candidate validation on the current Windows 11 QA machine is complete for the core Free Beta workflow. The executable regression suite passed 21/21 with a Release build reporting 0 warnings and 0 errors. No public Free Beta binary release has been published yet; remaining environment limitations are documented in `KNOWN_ISSUES.md`.
