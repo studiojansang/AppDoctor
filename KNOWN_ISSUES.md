@@ -27,7 +27,7 @@ These limitations apply to the current 0.1.0-beta.1 validation candidate and sho
 - No broad compatibility certification has been completed across third-party Win32/WinForms/WinUI/Electron applications.
 - The current Windows 11 QA machine was exercised at its active 100% (96 DPI) scale and at 900x600 and 1600x1000 window sizes. Physical multi-monitor DPI transitions and alternate system scale factors remain unvalidated.
 - A separate Windows 10 machine has not yet been used for final validation.
-- The EXE file picker has been click-through tested on the current Windows 11 QA machine. Source-folder picker and Explorer drag/drop still require final release-candidate click-through validation.
+- The EXE and source-folder pickers have been click-through tested on the current Windows 11 QA machine. Explorer drag/drop still requires final release-candidate validation.
 - Optional OpenAI visual review has not been validated using a live paid API request; account entitlement, billing, and provider-side availability remain user-specific.
 
 ## Source repair scope
