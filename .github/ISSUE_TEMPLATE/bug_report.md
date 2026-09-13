@@ -5,6 +5,8 @@ title: "[Bug] "
 labels: bug
 ---
 
+Maintainers assign `priority:P0` through `priority:P3` and one or more `area:*` labels after triage. Please describe the real impact instead of guessing a severity.
+
 ## App Doctor version
 
 Example: `0.1.0-beta.1`
