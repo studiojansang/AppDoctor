@@ -1,0 +1,42 @@
+name: Public repository guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-scope-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Block private source, binaries, secrets, and internal QA artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          bad=()
+          while IFS= read -r f; do
+            lower="${f,,}"
+            case "$lower" in
+              src/*|tests/*|samples/*|scripts/*|artifacts/*|testresults/*|sourcebackups/*|\
+              *.cs|*.csproj|*.sln|*.dll|*.exe|*.pdb|\
+              *.pfx|*.p12|*.pem|*.key|*.snk|*.jks|*.keystore|\
+              .env|.env.*|*/.env|*/.env.*|\
+              *secrets.json|*credentials.json|*settings.json|\
+              *appdoctor_source.zip|\
+              docs/validation.md|docs/post_release_operations.md|docs/release_draft_*)
+                bad+=("$f")
+                ;;
+            esac
+          done < <(git ls-files)
+
+          if ((${#bad[@]})); then
+            echo "Forbidden files detected in the public repository:"
+            printf ' - %s\n' "${bad[@]}"
+            exit 1
+          fi
+
+          echo "Public repository scope guard passed."
