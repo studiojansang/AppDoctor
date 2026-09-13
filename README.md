@@ -4,7 +4,7 @@
 
 App Doctor is a Windows desktop QA automation tool that launches a target application, inspects UI exposed through Windows UI Automation, performs bounded safety-filtered interactions, and records evidence for issues it can observe.
 
-Current development version: **0.1.0-beta.1**. A public Free Beta binary release has not been published yet.
+Current public Free Beta: **0.1.0-beta.1**.
 
 ## What it does
 
@@ -49,7 +49,7 @@ Do not post API keys, credentials, private source code, or sensitive application
 ## Project links
 
 - **Issues:** Use GitHub Issues to report bugs and request features.
-- **Releases:** Published Free Beta builds will be available from GitHub Releases after release validation is complete.
+- **Releases:** The current Free Beta build is available from GitHub Releases.
 
 ## License
 
