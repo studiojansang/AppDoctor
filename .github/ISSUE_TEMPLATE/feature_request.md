@@ -5,6 +5,8 @@ title: "[Feature] "
 labels: enhancement
 ---
 
+Maintainers assign `priority:P0` through `priority:P3` and one or more `area:*` labels after triage. Please describe the user impact rather than assigning a severity yourself.
+
 ## App Doctor version
 
 Example: `0.1.0-beta.1`
