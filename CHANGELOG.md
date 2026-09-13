@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-beta.2 — 2026-09-14
+
+- Added narrowly verified UI handoff support when the selected launch creates exactly one new same-executable direct child that exposes the visible UI.
+- Hardened handoff safety so pre-existing processes, different-executable children, and ambiguous multiple same-executable children are not adopted.
+- Revalidated cleanup using PID plus creation time for the original launch and any adopted handoff instance.
+- Expanded Windows 11 real-app validation to Notepad, Character Map, Paint, and Calculator launcher behavior.
+- Expanded the executable regression suite to 24 passing tests, including positive and negative handoff cases.
+- Kept shell-mediated packaged-app activation as a documented limitation when Windows does not expose a trustworthy caller-to-package-process relationship.
+
+Release-candidate validation passed 24/24 executable tests with a Release build reporting 0 warnings and 0 errors. The public beta.2 portable ZIP was also downloaded from GitHub, hash-verified, freshly extracted, and launch/navigation smoke-tested after publication.
+
 ## 0.1.0-beta.1 — 2026-09-13
 
 - Added Windows UI Automation based bounded exploration for accessible desktop UI.

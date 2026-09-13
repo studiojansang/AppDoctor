@@ -1,11 +1,13 @@
 # App Doctor Free Beta — Known limitations
 
-These limitations apply to the current 0.1.0-beta.1 validation candidate and should be reviewed again before a public binary release.
+These limitations apply to the current 0.1.0-beta.2 Free Beta.
 
 ## UI coverage
 
 - Best coverage is expected for WPF, WinForms, WinUI, and conventional Win32 applications that expose useful Windows UI Automation metadata.
-- Electron applications can move their visible UI to a different process or reuse an already-running process, which can limit PID-scoped inspection.
+- App Doctor can follow one narrowly verified UI handoff only when the selected launch creates exactly one new same-executable direct child with a visible UI Automation window. Pre-existing, different-executable, or ambiguous multiple candidates are not adopted.
+- Shell-mediated packaged-app activation can remain unsupported when Windows does not expose a trustworthy caller-to-package-process relationship. The current Windows Calculator launcher path is a confirmed example.
+- Electron applications can move their visible UI across processes or reuse already-running processes in ways that may fall outside the safe handoff rule.
 - Games, DirectX/custom-rendered UI, browser canvases, remote surfaces, secure desktops, and other interfaces without useful accessibility metadata can be Limited or Unsupported.
 - App Doctor does not use blind coordinate clicking to claim coverage where semantic UI Automation data is unavailable.
 

@@ -4,13 +4,13 @@
 
 App Doctor is a Windows desktop QA automation tool that launches a target application, inspects UI exposed through Windows UI Automation, performs bounded safety-filtered interactions, and records evidence for issues it can observe.
 
-Current public Free Beta: **0.1.0-beta.1**.
+Current public Free Beta: **0.1.0-beta.2**.
 
 ## Download
 
-- [App Doctor 0.1.0-beta.1 — Free Beta](https://github.com/studiojansang/AppDoctor/releases/tag/v0.1.0-beta.1)
+- [App Doctor 0.1.0-beta.2 — Free Beta](https://github.com/studiojansang/AppDoctor/releases/tag/v0.1.0-beta.2)
 - Windows x64 portable package: `AppDoctor_Windows_x64_Portable.zip`
-- SHA256: `9A3A08431BA9882E4D1E2D71428D93EADAB37713DD19900793771443707D8110`
+- SHA256: `588944E846C1201593AFF75DCD712158D3B2BF9E66B307B7FE7F41548B3C332A`
 - A matching `SHA256SUMS.txt` is included as a release asset.
 
 Extract the entire ZIP to a normal writable folder, then run `AppDoctor.exe` or `START_APP_DOCTOR.bat`. Keep the DLL/runtime files beside the EXE; do not copy only `AppDoctor.exe` out of the package. The Free Beta is currently unsigned, so Windows may show a reputation/security prompt.
