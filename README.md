@@ -1,16 +1,21 @@
 # App Doctor
 
+> **Official repository moved:** App Doctor now uses [appdoctorapp/AppDoctor](https://github.com/appdoctorapp/AppDoctor).
+> Visit the [official releases page](https://github.com/appdoctorapp/AppDoctor/releases) for downloads and the [new issue tracker](https://github.com/appdoctorapp/AppDoctor/issues) for bug reports and feature requests.
+> Existing release files in this repository remain available for older links. App Doctor remains closed-source Free Beta software.
+
 **Automated QA testing for Windows desktop apps.**
 
 App Doctor is a Windows desktop QA automation tool that launches a target application, inspects UI exposed through Windows UI Automation, performs bounded safety-filtered interactions, and records evidence for issues it can observe.
 
-Current public Free Beta: **0.1.0-beta.3**.
+Latest release documented in this repository: **0.1.0-beta.3**. Use the official releases page below for current downloads.
 
 ## Download
 
-- [App Doctor 0.1.0-beta.3 — Free Beta](https://github.com/studiojansang/AppDoctor/releases/tag/v0.1.0-beta.3)
+- [Official App Doctor downloads](https://github.com/appdoctorapp/AppDoctor/releases)
+- [Archived 0.1.0-beta.3 download in this repository](https://github.com/studiojansang/AppDoctor/releases/tag/v0.1.0-beta.3)
 - Windows x64 portable package: `AppDoctor_Windows_x64_Portable.zip`
-- SHA256: `4990F1711E8EBA879F97A31B64015F75B1B9C8E5458485ABE6795B38D446F7BE`
+- Archived beta.3 ZIP SHA256: `4990F1711E8EBA879F97A31B64015F75B1B9C8E5458485ABE6795B38D446F7BE`
 - A matching `SHA256SUMS.txt` is included as a release asset.
 
 Extract the entire ZIP to a normal writable folder, then run `AppDoctor.exe` or `START_APP_DOCTOR.bat`. Keep the DLL/runtime files beside the EXE; do not copy only `AppDoctor.exe` out of the package. The Free Beta is currently unsigned, so Windows may show a reputation/security prompt.
@@ -44,7 +49,7 @@ The beta is designed to work locally by default. AI-assisted visual review, when
 
 ## Reporting a bug
 
-Found something broken? Please open an issue and include:
+Found something broken? Please [open an issue in the official repository](https://github.com/appdoctorapp/AppDoctor/issues) and include:
 
 1. App Doctor version
 2. Windows version and display scaling if relevant
@@ -57,8 +62,8 @@ Do not post API keys, credentials, private source code, or sensitive application
 
 ## Project links
 
-- **Issues:** Use GitHub Issues to report bugs and request features.
-- **Releases:** The current Free Beta build is available from GitHub Releases.
+- **Issues:** [Official bug reports and feature requests](https://github.com/appdoctorapp/AppDoctor/issues).
+- **Releases:** [Official Free Beta downloads](https://github.com/appdoctorapp/AppDoctor/releases).
 
 ## License
 
@@ -66,4 +71,4 @@ App Doctor itself is **closed-source Free Beta software**, not open-source softw
 
 Microsoft/.NET and other third-party components remain under their original licenses. See `THIRD-PARTY-NOTICES.md` and the notices included with a portable build.
 
-This public repository is for documentation, issue tracking, and release information. App Doctor source code is maintained separately in a private repository.
+This repository retains the earlier public documentation and releases. Current documentation, issue tracking, and release information are maintained in [appdoctorapp/AppDoctor](https://github.com/appdoctorapp/AppDoctor). App Doctor source code is maintained separately in a private repository.
