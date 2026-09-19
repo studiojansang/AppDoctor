@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-beta.3 — 2026-09-20
+
+- Stream HTML report evidence and session JSON to reduce memory allocations while preserving atomic saves and existing data on cancellation or write failure.
+- Add report search hints, delayed filtering, visible/total counts, filter reset and clearer empty states.
+- Add a Follow latest log switch and steadier elapsed-time/Stop feedback while the worker is busy.
+- Preserve history comparison selections after refresh and clear stale results when the selected pair changes.
+
+Validation: Release build 0 warnings/errors, 28 executable regression tests, 6 WPF behavior groups including an owned-target stop, and self-contained portable launch/navigation smoke passed. Six pages were rendered at two viewport/DPI combinations; this does not replace physical display testing.
+
+In an eight-image synthetic report fixture, managed allocations fell from about 75.6 MB to 0.75–0.96 MB, with identical HTML except for the version footer. This does not measure overall scan speed or peak application memory.
+
 ## 0.1.0-beta.2 — 2026-09-14
 
 - Added narrowly verified UI handoff support when the selected launch creates exactly one new same-executable direct child that exposes the visible UI.
