@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Official App Doctor issue tracker
+    url: https://github.com/appdoctorapp/AppDoctor/issues
+    about: App Doctor has moved. Use the official repository for new bug reports and feature requests.
   - name: Security or sensitive report
-    url: https://github.com/studiojansang/AppDoctor/security/policy
+    url: https://github.com/appdoctorapp/AppDoctor/security/policy
     about: Read the security reporting policy before sharing vulnerability details, credentials, private source, or sensitive data.
   - name: Current Free Beta release
-    url: https://github.com/studiojansang/AppDoctor/releases/tag/v0.1.0-beta.1
+    url: https://github.com/appdoctorapp/AppDoctor/releases
     about: Download the current Windows x64 Free Beta and review release notes and known limitations.
